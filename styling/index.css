@@ -8,7 +8,7 @@ nav {
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 4rem;
+    height: 5rem;
     
 }
 
@@ -28,6 +28,12 @@ ul.nav-left-content {
     height: 100%;
     display: flex;
     align-items: center;
+
+}
+
+ul > li {
+    font-family:Poppins;
+    font-weight: 500;
 }
 
 
@@ -43,10 +49,33 @@ ul.nav-right-content {
     display: flex;
     justify-content: flex-end;
     align-items: center;
+    padding-right:1rem ;    
 }
 
-li.nav-right-border {
-    border-right: 1px solid black;
-    padding: .75rem;
+ul.nav-right-content > li > button {
+    padding: .6rem;
+    background-color: black;
+    color: white;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    border-radius: .45rem;
+    border: none;
 }
+
+
+ul.nav-right-content > li > button:hover {
+    padding: .6rem;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 600;
+    border-radius: .45rem;
+    cursor: pointer;
+}
+
+
+.middle-pipe::before {
+    content: "|";
+    color: gray;
+}
+
+
 
